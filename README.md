@@ -16,7 +16,7 @@ Welcome to my web portfolio, a showcase of my work in web development. This port
 
 ## <span style="font-size:larger;">Getting Started:</span>
 
-You can visit my web portfolio by clicking here: <span style="font-size:larger;">[my GitHub Pages](#)</span> to see the live version of this portfolio.
+You can visit my web portfolio by clicking here: <span style="font-size:larger;">[my GitHub Pages](https://awassanan.github.io/Web-Portfolio/)</span> to see the live version of this portfolio.
 
 <hr>
 
