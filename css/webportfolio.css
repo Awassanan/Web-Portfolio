@@ -1,3 +1,4 @@
+/* Timeline */
 .timeline-with-icons {
     border-left: 1px solid hsl(0, 0%, 90%);
     position: relative;
@@ -27,6 +28,8 @@
     justify-content: center;
 }
 
+/* Gallery */
+
 .all-padding {
     padding-top: 2rem;
     padding-left: 5rem;
@@ -36,4 +39,20 @@
 .side-padding {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
+}
+
+/* My doll collection */
+.placeholder-lighter::placeholder {
+    color: #999; /* Lighter placeholder color */
+}
+
+.bottom-padding {
+    padding-bottom: 2rem;
+}
+
+#add-doll-button {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
 }
