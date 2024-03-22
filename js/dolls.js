@@ -63,7 +63,7 @@ function newDollModal() {
 
     document.getElementById('dollId').value = nextId;
     document.getElementById('Name').placeholder = "name";
-    document.getElementById('Image').placeholder = "dolls/picname.png";
+    document.getElementById('Image').placeholder = "dolls/picname.jpg";
     document.getElementById('DOB').placeholder = "dd/mm/yyyy";
     document.getElementById('Price').placeholder = "xxx.xx";
 
