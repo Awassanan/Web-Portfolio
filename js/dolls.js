@@ -2,8 +2,8 @@ let dollList = [
     {
         Id: 1,
         Name: "Yuyu",
-        Image: "img/logo.png",
-        DOB: "28/10/2023",
+        Image: "dolls/Yuyu.jpg",
+        DOB: "28/10/2022",
         Price: 300
     }
 ]
@@ -63,7 +63,7 @@ function newDollModal() {
 
     document.getElementById('dollId').value = nextId;
     document.getElementById('Name').placeholder = "name";
-    document.getElementById('Image').placeholder = "img/picname.png";
+    document.getElementById('Image').placeholder = "dolls/picname.png";
     document.getElementById('DOB').placeholder = "dd/mm/yyyy";
     document.getElementById('Price').placeholder = "xxx.xx";
 
@@ -141,68 +141,3 @@ function editDollModal(dollId, name, image, dob, price) {
 
     bootstrapModal.show();
 }
-
-// function editDollModal(dollId, name, image, dob, price) {
-//     var modal = document.getElementById('myModal');
-//     var bootstrapModal = new bootstrap.Modal(modal);
-//     document.getElementById("myModalLabel").innerHTML = "Edit Doll Info"
-
-//     clearInputField()
-
-//     document.getElementById('dollId').value = dollId;
-//     document.getElementById('Name').placeholder = name;
-//     document.getElementById('Image').placeholder = image;
-//     document.getElementById('DOB').placeholder = dob;
-//     document.getElementById('Price').placeholder = price;
-
-//     document.getElementById('saveChangesButton').onclick = function () {
-//         editDoll(
-//             document.getElementById('dollId').value,
-//             document.getElementById('Name').value,
-//             document.getElementById('Image').value,
-//             document.getElementById('DOB').value,
-//             document.getElementById('Price').value
-//         );
-//         bootstrapModal.hide();
-//     };
-
-//     bootstrapModal.show();
-// }
-
-// function editDoll() {
-//     let dollId = document.getElementById('dollId').value;
-//     let updatedDoll = {
-//         Id: dollId,
-//         Name: document.getElementById('Name').value,
-//         Image: document.getElementById('Image').value,
-//         DOB: document.getElementById('DOB').value,
-//         Price: document.getElementById('Price').value
-//     };
-
-//     dollList[dollId - 1] = updatedDoll
-
-//     let dollRecord = document.getElementById("doll" + dollId);
-//     if (dollRecord) {
-//         dollRecord.innerHTML = `<tr id=${"doll" + updatedDoll.Id}>
-//             <th scope="row">${updatedDoll.Id}</th>
-//             <td>
-//                 <div class="d-flex justify-content-between" style="width:70%">
-//                     <i class="bi-pencil-square" onclick='editDollModal(${JSON.stringify(updatedDoll)})'></i>
-//                     <i class="bi-trash-fill" onclick='deleteDoll(${updatedDoll.Id})'></i>
-//                 </div>
-//             </td>
-//             <td>
-//                 <img src=${updatedDoll.Image} width=150></img>
-//             </td>
-//             <td>${updatedDoll.Name}</td>
-//             <td>${updatedDoll.DOB}</td>
-//             <td>${updatedDoll.Price}&nbsp;Baht</td>
-//         </tr>`;
-//     } else {
-//         console.error("Doll record not found:", dollId);
-//     }
-
-//     var modal = document.getElementById('myModal');
-//     var bootstrapModal = new bootstrap.Modal(modal);
-//     bootstrapModal.hide();
-// }
